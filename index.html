@@ -8,25 +8,36 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section class="hero">
-        <img src="" alt="Background da página. Olho colorido">
         <header>
             <nav>
-                <p>DSR Gráfica</p>
+                <img src="assets/dsr-logo.svg" alt="">
+
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
             </nav>
         </header>
 
-        <h1>DSR Gráfica: Imprimindo suas ideias e soluções com qualidade!</h1>
-
-        <p>Somos especializados em oferecer soluções completas em brindes, gráfica e copiadora para empresas e eventos.Com mais de 5 anos de experiência, estamos comprometidos com a qualidade, agilidade e satisfação do cliente.</p>
-
-        <button>Fale Conosco</button>
+        <div class="title">
+            <h1>Imprimindo suas ideias e soluções com qualidade!</h1>
+            <p>Somos especializados em oferecer soluções completas em brindes, gráfica e copiadora para empresas e eventos. Com mais de 43 anos de experiência, estamos comprometidos com a qualidade, agilidade e satisfação do cliente.</p>
+            <button>Fale Conosco</button>
+        </div>
     </section>
 
     <main>
@@ -189,6 +200,7 @@
         <p>© 2023 - Rocketseat Explorer</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
