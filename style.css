@@ -31,13 +31,14 @@ html, body, input {
         url('assets/background.jpg') no-repeat 12% center/cover var(--color-base-black);
     height: 100vh;
 
-    padding: 0 3.5rem 0;
+    padding: 0 4rem 0rem;
+    height: 65rem;
+    margin-bottom: 4rem;
 }
 
 nav {
     display: flex;
     align-items: center;
-
     justify-content: space-between;
     padding: 1rem 0;
 }
@@ -65,7 +66,6 @@ nav > img {
     transition: all 0.3s ease;
 }
 
-
 .menu-toggle .bar:last-child {
     width: 1.25rem;
 }
@@ -88,7 +88,6 @@ nav > img {
     color: var(--color-base-white);
     text-decoration: none;
 }
-
 
 .title {
     width: 35rem;
@@ -134,6 +133,178 @@ h1 {
 
 .menu.active {
     display: flex;
+}
+
+section {
+    margin-bottom: 8rem;
+}
+
+main {
+    padding: 0rem 4rem;
+    color: var(--color-02);
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+h2 {
+    color: var(--color-01);
+    font-size: 2rem;
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.301);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.subtitle img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .7rem;
+}
+
+.card {
+    background-color: #101828;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    border-radius: .5rem;
+
+    width: 100%;
+    max-height: 17.5rem;
+    aspect-ratio: auto 1 / 1;
+
+    font-weight: bold;
+    font-size: 2.5rem;
+
+    color: var(--color-base-white);
+
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card:hover {
+    cursor: default;
+
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+
+    filter: brightness(0.8);
+    transition: transform 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card figcaption {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.card:last-child {
+    grid-column: span 2;
+    max-height: 17.5rem;
+}
+
+p, ul {
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 3rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.highlights > h3 {
+    font-size: 2rem;
+    color: var(--color-01);
+    font-style: italic;
+    font-weight: 900;
+
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+.highlights > h4 {
+    font-size: 1.8rem;
+    color: var(--color-01);
+    font-style: italic;
+    font-weight: 900;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.highlights > button {
+    color: var(--color-base-white);
+    font-size: 1.5rem;
+
+    padding: 1.6rem 2.8rem;
+    margin-top: 2rem;
+    border: .1rem solid var(--color-base-white);
+    border-radius: .5rem;
+
+    background: linear-gradient(45deg, #101828, #243961);
+    cursor: pointer;
+    transition: color 300ms, background-color 300ms, transform 300ms, box-shadow 300ms;
+}
+
+.highlights button:hover {
+    border: .1rem solid var(--color-base-white);
+    transform: scale(1.1);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    color: var(--color-base-white);
+    background-color: var(--color-01);
+
+    padding: 4rem 4rem;
+    font-size: 1.6rem;
+}
+
+footer > .subtitle{
+    color: var(--color-base-white);
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.301);
+}
+
+footer > .subtitle > h2 {
+    color: var(--color-base-white);
+}
+
+.final {
+    text-align: center;
+    border-top: 0.1rem solid rgba(255, 255, 255, 0.301);
+    padding-top: 3rem;
 }
 
 
