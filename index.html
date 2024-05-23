@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,7 +19,7 @@
     <section class="hero">
         <header>
             <nav>
-                <img src="assets/dsr-logo.svg" alt="">
+                <img src="assets/dsr-logo.svg" alt="Logo quebra-cabeça DSR Gráfica">
 
                 <div class="menu-toggle" id="menu-toggle">
                     <div class="bar"></div>
@@ -49,35 +51,35 @@
 
             <div class="services-grid">
                 <figure class="card">
-                    <img src="assets/banners.jpg" alt="Tipo de Serviço prestado: Banners e Cartazes">
+                    <img src="assets/services/banners.jpg" alt="Tipo de Serviço prestado: Banners e Cartazes">
                     <figcaption>
                         <p>Banners e Cartazes</p>
                     </figcaption>
                 </figure>
     
                 <figure class="card">
-                    <img src="assets/cardapio.jpg" alt="Tipo de Serviço prestado:Cardápios">
+                    <img src="assets/services/cardapio.jpg" alt="Tipo de Serviço prestado:Cardápios">
                     <figcaption>
                         <p>Cardápios</p>
                     </figcaption>
                 </figure>
     
                 <figure class="card">
-                    <img src="assets/cartao-de-visita.jpg" alt="Tipo de Serviço prestado: Cartão de Visita">
+                    <img src="assets/services/cartao-de-visita.jpg" alt="Tipo de Serviço prestado: Cartão de Visita">
                     <figcaption>
                         <p>Cartões de Visita</p>
                     </figcaption>
                 </figure>
     
                 <figure class="card">
-                    <img src="assets/panfleto.jpg" alt="Tipo de Serviço prestado: Panfletos">
+                    <img src="assets/services/panfleto.jpg" alt="Tipo de Serviço prestado: Panfletos">
                     <figcaption>
                         <p>Panfletos</p>
                     </figcaption>
                 </figure>
     
                 <figure class="card">
-                    <img src="assets/caneca.jpg" alt="Tipo de Serviço prestado: Brindes">
+                    <img src="assets/services/caneca.jpg" alt="Tipo de Serviço prestado: Brindes">
                     <figcaption>
                         <p>Brindes</p>
                     </figcaption>
@@ -148,30 +150,31 @@
 
         <section class="contact">
             <div class="contact-item">
-                <p>Email</p>
-                <p>Estamos à disposição para te auxiliar.</p>
-                <p><strong>dsrgrafica@gmail.com</strong></p>
+                <span class="input-icon"><i class="fa-regular fa-envelope"></i></span>
+                <p class="contact-title">Email</p>
+                <p class="contact-subtitle">Estamos à disposição para te auxiliar.</p>
+                <p class="contact-text"><strong>dsrgrafica@gmail.com</strong></p>
             </div>
-
+        
             <div class="contact-item">
-                <p>WhatsApp</p>
-                <p>Estamos à disposição para te auxiliar.</p>
-                <p><strong>Inciar novo chat</strong></p>
+                <span class="input-icon"><i class="fab fa-whatsapp"></i></span>
+                <p class="contact-title">WhatsApp</p>
+                <p class="contact-subtitle">Estamos à disposição para te auxiliar.</p>
+                <p class="contact-text"><strong>Iniciar novo chat</strong></p>
             </div>
-
+        
             <div class="contact-item">
-                <p>Local</p>
-                <p>Venha nos visitar.</p>
-                <p><strong>
-                        Rua do Rosário, 151<br>
-                        Vila Camargos | Guarulhos-SP
-                    </strong></p>
+                <span class="input-icon"><i class="fas fa-map-marker-alt"></i></span>
+                <p class="contact-title">Local</p>
+                <p class="contact-subtitle">Venha nos visitar.</p>
+                <p class="contact-text"><strong>Rua do Rosário, 151 - Vila Camargos | Guarulhos-SP</strong></p>
             </div>
-
+        
             <div class="contact-item">
-                <p>Telefone</p>
-                <p>Segunda a sexta-feira, das 9h30 às 18h30</p>
-                <p><strong>11 9 8230 5193 | 11 2856 9866</strong></p>
+                <span class="input-icon"><i class="fas fa-phone"></i></span>
+                <p class="contact-title">Telefone</p>
+                <p class="contact-subtitle">Segunda a sexta-feira, das 9h30 às 18h30.</p>
+                <p class="contact-text"><strong>11 9 8230 5193 | 11 2856 9866</strong></p>
             </div>
 
         </section>
@@ -179,31 +182,30 @@
         <section class="form">
             <form id="my-form">
                 <fieldset>
-                    <div class="input-wrapper">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" placeholder="Nome">
-                    </div>
-
-                    <div class="input-wrapper">
-                        <label for="surname">Sobrenome</label>
-                        <input type="text" id="surname" placeholder="Sobrenome">
+                    <div class="input-wrapper-grid">
+                        <div class="input-wrapper">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" placeholder="Nome">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="surname">Sobrenome</label>
+                            <input type="text" id="surname" placeholder="Sobrenome">
+                        </div>
                     </div>
 
                     <div class="input-wrapper">
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Email">
+                        <input type="email" id="email" placeholder="exemplo@email.com">
                     </div>
 
                     <div class="input-wrapper">
                         <label for="textarea">Mensagem</label>
-                        <textarea name="text" id="textarea" cols="30" rows="10"
-                            placeholder="Digite sua mensagem aqui...">
-                        </textarea>
+                        <textarea name="text" id="textarea" cols="30" rows="10"></textarea>
                     </div>
 
-                    <div class="input-wrapper">
-                        <label for="check">Você concorda com nossa política de privacidade.</label>
+                    <div class="input-wrapper check-wrapper">
                         <input type="checkbox" id="check">
+                        <label for="check" class="check">Você concorda com nossa <a href="#">política de privacidade.</a></label>
                     </div>
 
                     <button type="submit">Enviar</button>
@@ -213,6 +215,8 @@
 
         <div class="final">
             <p>© 2024 DSR Gráfica. Todos os direitos reservados.</p>
+            <a href="https://m.facebook.com/people/Dsr-Gr%C3%A1fica-e-Copiadora/100063831734475/?locale=pt_BR" target="_blank"><span class="input-icon"><i class="fa-brands fa-facebook"></i></span></a>
+            <a href="https://www.instagram.com/dsr.grafica?igsh=MTBoYnZsMmQxdDRjNw==" target="_blank"><span class="input-icon"><i class="fa-brands fa-instagram"></i></span></a>
         </div>
     </footer>
 

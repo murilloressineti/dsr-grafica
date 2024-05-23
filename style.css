@@ -18,6 +18,8 @@
     --color-01:#101828;
     --color-02:#667085;
     --color-03: #CECECE;
+    --input-color: #344054;
+    --input-border: #D0D5DD;
     --radial-gradient: circle, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75);
 }
 
@@ -284,6 +286,111 @@ li {
     box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
 }
 
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    margin-bottom: 4rem;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-icon {
+    color: var(--color-base-white);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.contact-subtitle {
+    color: var(--color-03);
+    font-size: 1.2rem;
+}
+
+.contact-text {
+    font-size: 1.2rem;
+}
+
+#my-form {
+    background-color: var(--color-base-white);
+    border-radius: 1rem;
+    padding: 2.6rem 2rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.input-wrapper-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.input-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+.input-wrapper > label {
+    color: var(--input-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input, textarea {
+    font-size: 1.2rem;
+    width: 100%;
+
+    margin-top: .5rem;
+    padding: 1rem;
+    border: 0.1rem solid var(--input-border);
+    border-radius: 0.5rem;
+}
+
+.check-wrapper {
+    display: flex;
+}
+
+.check-wrapper input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.input-wrapper > .check, a {
+    color: #667085;
+    font-weight: normal;
+}
+
+fieldset > button {
+    width: 100%;
+
+    color: var(--color-base-white);
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    padding: 1.6rem 2.8rem;
+    margin-top: 2rem;
+    border: .1rem solid var(--color-base-white);
+    border-radius: .5rem;
+
+    background: linear-gradient(45deg, #101828, #243961);
+    cursor: pointer;
+    transition: color 300ms, background-color 300ms, transform 300ms, box-shadow 300ms;
+}
+
+fieldset > button:hover {
+    border: .1rem solid var(--color-base-white);
+    transform: scale(1.1);
+    box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+}
+
 footer {
     color: var(--color-base-white);
     background-color: var(--color-01);
@@ -307,6 +414,15 @@ footer > .subtitle > h2 {
     padding-top: 3rem;
 }
 
+.final > a > span > i {
+    cursor: pointer;
+    padding: 1rem;
+    transition: color 300ms, background-color 300ms, transform 300ms, box-shadow 300ms;
+}
+
+.final > a > span > i:hover {
+    transform: scale(1.1);
+}
 
 @media (min-width: 768px) {
     .menu-toggle {
