@@ -45,7 +45,7 @@
     <main>
         <section class="services">
             <div class="subtitle">
-                <img src="assets/logo.svg" alt="Logo quebra-cabeça DSR-Gráfica">
+                <img src="assets/logo-quebra-cabeça.svg" alt="Logo quebra-cabeça DSR-Gráfica">
                 <h2>Serviços</h2>
             </div>
 
@@ -89,7 +89,7 @@
 
         <section class="about-us">
             <div class="subtitle">
-                <img src="assets/logo.svg" alt="Logo quebra-cabeça DSR-Gráfica">
+                <img src="assets/logo-quebra-cabeça.svg" alt="Logo quebra-cabeça DSR-Gráfica">
                 <h2>Sobre Nós</h2>
             </div>
 
@@ -116,7 +116,7 @@
 
         <section class="highlights">
             <div class="subtitle">
-                <img src="assets/logo.svg" alt="Logo quebra-cabeça DSR-Gráfica">
+                <img src="assets/logo-quebra-cabeça.svg" alt="Logo quebra-cabeça DSR-Gráfica">
                 <h2>Destaques</h2>
             </div>
 
@@ -144,7 +144,7 @@
 
     <footer>
         <div class="subtitle">
-            <img src="assets/logo.svg" alt="Logo quebra-cabeça DSR-Gráfica">
+            <img src="assets/logo-quebra-cabeça.svg" alt="Logo quebra-cabeça DSR-Gráfica">
             <h2>Entre em Contato</h2>
         </div>
 
@@ -180,7 +180,7 @@
         </section>
 
         <section class="form">
-            <form id="my-form">
+            <form  action="https://api.staticforms.xyz/submit" method="post" id="my-form">
                 <fieldset>
                     <div class="input-wrapper-grid">
                         <div class="input-wrapper">
@@ -192,23 +192,21 @@
                             <input type="text" id="surname" placeholder="Sobrenome">
                         </div>
                     </div>
-
+        
                     <div class="input-wrapper">
                         <label for="email">Email</label>
                         <input type="email" id="email" placeholder="exemplo@email.com">
                     </div>
-
+        
                     <div class="input-wrapper">
                         <label for="textarea">Mensagem</label>
                         <textarea name="text" id="textarea" cols="30" rows="10"></textarea>
                     </div>
-
-                    <div class="input-wrapper check-wrapper">
-                        <input type="checkbox" id="check">
-                        <label for="check" class="check">Você concorda com nossa <a href="#">política de privacidade.</a></label>
-                    </div>
-
+        
                     <button type="submit">Enviar</button>
+
+                    <input type="hidden" name="redirectTo" value="">
+                    <input type="hidden" name="accessKey" value="676c9df3-2d58-451e-9713-7c76e6444c69">
                 </fieldset>
             </form>
         </section>

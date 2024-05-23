@@ -42,22 +42,20 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 2rem 0;
+    margin-bottom: 5rem;
 }
 
 nav > img {
     width: 20rem;
     height: auto;
-
-    margin-bottom: 5rem;
-    border: 2px solid red;
 }
 
 .menu-toggle {
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    margin-right: auto;
+    flex-wrap: wrap-reverse;
 }
 
 .menu-toggle .bar {
@@ -86,7 +84,7 @@ nav > img {
 
 .menu li a {
     display: block;
-    padding: 1rem;
+    padding: 0.5rem;
     color: var(--color-base-white);
     text-decoration: none;
 }
@@ -156,15 +154,15 @@ h2 {
 .subtitle {
     display: flex;
     align-items: center;
-    gap: 0.3rem;
+    gap: .8rem;
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.301);
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
 }
 
 .subtitle img {
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .services-grid {
@@ -355,17 +353,8 @@ input, textarea {
     border-radius: 0.5rem;
 }
 
-.check-wrapper {
-    display: flex;
-}
-
-.check-wrapper input[type="checkbox"] {
-    margin-right: 0.5rem;
-}
-
-.input-wrapper > .check, a {
-    color: #667085;
-    font-weight: normal;
+textarea {
+    resize: none;
 }
 
 fieldset > button {
