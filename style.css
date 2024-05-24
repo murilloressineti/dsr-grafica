@@ -56,12 +56,18 @@ nav > img {
     flex-direction: column;
     cursor: pointer;
     flex-wrap: wrap-reverse;
+    z-index: 1000;
+}
+
+.menu-toggle.hidden {
+    display: none;
 }
 
 .menu-toggle .bar {
     width: 2.5rem;
-    height: .2rem;
+    height: .3rem;
     background-color: var(--color-base-white);
+    border-radius: 0.2rem;
     margin: .4rem 0;
     transition: all 0.3s ease;
 }
@@ -72,21 +78,36 @@ nav > img {
 
 .menu {
     list-style: none;
-    display: none;
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 35%;
     text-align: center;
-}
 
-.menu li {
-    border-bottom: 1px solid var(--color-base-white);
+    background-color: rgba(255, 255, 255);
+    border-radius: 0 0 0 1rem;
+
+    position: absolute;
+    top: 0%;
+    left: 100;
+    right: 0;
+    padding: 0rem;
+    display: none;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
 }
 
 .menu li a {
     display: block;
-    padding: 0.5rem;
-    color: var(--color-base-white);
+    padding: 1rem;
+    color: var(--color-01);
     text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.menu li a:hover {
+    color: var(--color-02);
 }
 
 .title {
@@ -264,7 +285,7 @@ li {
     margin-bottom: 1.5rem;
 }
 
-.highlights > button {
+.highlights button {
     color: var(--color-base-white);
     font-size: 1.5rem;
 
@@ -315,6 +336,17 @@ li {
 
 .contact-text {
     font-size: 1.2rem;
+    transition: 300ms
+}
+
+.contact-text:hover {
+    cursor: pointer;
+    filter: brightness(0.8);
+}
+
+.contact-text a {
+    text-decoration: none;
+    color: var(--color-03);
 }
 
 #my-form {
