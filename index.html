@@ -188,32 +188,32 @@
         </section>
 
         <section class="form">
-            <form  action="https://api.staticforms.xyz/submit" method="post" id="my-form">
+            <form action="https://api.staticforms.xyz/submit" method="post" id="my-form">
                 <fieldset>
                     <div class="input-wrapper-grid">
                         <div class="input-wrapper">
                             <label for="name">Nome</label>
-                            <input type="text" id="name" placeholder="Nome">
+                            <input type="text" id="name" name="name" placeholder="Nome" required>
                         </div>
                         <div class="input-wrapper">
                             <label for="surname">Sobrenome</label>
-                            <input type="text" id="surname" placeholder="Sobrenome">
+                            <input type="text" id="surname" name="surname" placeholder="Sobrenome" required>
                         </div>
                     </div>
         
                     <div class="input-wrapper">
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="exemplo@email.com">
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
                     </div>
         
                     <div class="input-wrapper">
-                        <label for="textarea">Mensagem</label>
-                        <textarea name="text" id="textarea" cols="30" rows="10"></textarea>
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
                     </div>
         
                     <button type="submit">Enviar</button>
 
-                    <input type="hidden" name="redirectTo" value="">
+                    <input type="hidden" name="redirectTo" value="https://seudominio.com/index.html">
                     <input type="hidden" name="accessKey" value="676c9df3-2d58-451e-9713-7c76e6444c69">
                 </fieldset>
             </form>

@@ -31,4 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    const form = document.getElementById("my-form");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        alert("Obrigado pela mensagem!");
+
+        form.submit();
+    });
 });
