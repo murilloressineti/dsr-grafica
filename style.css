@@ -27,6 +27,21 @@ html, body, input {
     font-family: "Roboto", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+@keyframes fadeInAndSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hero {
     background: 
         radial-gradient(var(--radial-gradient)),
@@ -36,6 +51,9 @@ html, body, input {
     padding: 0 4rem 0rem;
     height: 65rem;
     margin-bottom: 4rem;
+
+    opacity: 0;
+    animation: fadeInAndSlideUp 1s forwards;
 }
 
 nav {
@@ -443,6 +461,44 @@ footer > .subtitle > h2 {
 
 .final > a > span > i:hover {
     transform: scale(1.1);
+}
+
+@keyframes fadeInAndMove {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #25d366;
+    color: #fff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s;
+    opacity: 0;
+    animation: fadeInAndMove 1s forwards;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e;
+}
+
+.whatsapp-button i {
+    font-size: 2rem;
 }
 
 @media (min-width: 768px) {
