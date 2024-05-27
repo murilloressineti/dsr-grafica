@@ -116,6 +116,10 @@ nav > img {
 
 }
 
+.menu.active {
+    display: flex;
+}
+
 .menu li a {
     display: block;
     padding: 1rem;
@@ -168,10 +172,6 @@ h1 {
     background-color: var(--color-base-white);
     transform: scale(1.1);
     box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
-}
-
-.menu.active {
-    display: flex;
 }
 
 section {
@@ -271,6 +271,10 @@ h2 {
     max-height: 17.5rem;
 }
 
+.about-us img {
+    display: none;
+}
+
 p, ul {
     margin-bottom: 1rem;
 }
@@ -283,7 +287,7 @@ li {
     margin-bottom: 0.5rem;
 }
 
-.highlights > h3 {
+.content-highlights .text > h3 {
     font-size: 2rem;
     color: var(--color-01);
     font-style: italic;
@@ -294,7 +298,7 @@ li {
     margin-bottom: 1.5rem;
 }
 
-.highlights > h4 {
+.content-highlights .text > h4 {
     font-size: 1.8rem;
     color: var(--color-01);
     font-style: italic;
@@ -321,6 +325,10 @@ li {
     border: .1rem solid var(--color-base-white);
     transform: scale(1.1);
     box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+}
+
+.content-highlights .image-highlights i {
+    display: none;
 }
 
 .contact{
@@ -453,13 +461,13 @@ footer > .subtitle > h2 {
     padding-top: 3rem;
 }
 
-.final > a > span > i {
+.final .icons > a > span > i {
     cursor: pointer;
     padding: 1rem;
     transition: color 300ms, background-color 300ms, transform 300ms, box-shadow 300ms;
 }
 
-.final > a > span > i:hover {
+.final .icons > a > span > i:hover {
     transform: scale(1.1);
 }
 
