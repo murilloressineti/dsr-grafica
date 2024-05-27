@@ -127,13 +127,14 @@
     }
 
     .content-highlights .image-highlights i {
+        display: flex;
         color: white;
         font-size: 10rem;
         cursor: pointer;
     }
 
     footer {
-        padding: 4rem 8rem 4rem;
+        padding: 4rem 8rem 2rem;
     }
 
     .content-footer{
@@ -145,6 +146,8 @@
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
     }
 
     .contact {
@@ -152,7 +155,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 5rem;
 
-        margin: auto;
+        margin: auto 1rem;
     }
 
     .final {
