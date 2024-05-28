@@ -99,6 +99,7 @@
     }
 
     .about-us .images-about-us {
+        display: flex;
         background: 
         radial-gradient(var(--radial-gradient)),
         url('assets/about-us/offset.jpg') no-repeat 12% center/cover var(--color-base-black);
