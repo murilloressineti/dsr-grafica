@@ -188,7 +188,7 @@
         transform: scale(1.05)
     }    
 
-    .final {
+    .baseboard {
         display: flex;
         flex-direction: row;
 
