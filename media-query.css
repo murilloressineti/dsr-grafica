@@ -158,6 +158,26 @@
         margin: auto 1rem;
     }
 
+    .input-icon {
+        font-size: 2.2rem;
+    }    
+
+    .contact-title {
+        font-size: 1.6rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 1.4rem;
+    }
+    
+    .contact-text {
+        font-size: 1.4rem;
+    }
+
+    fieldset > button:hover {
+        transform: scale(1.05)
+    }    
+
     .final {
         display: flex;
         flex-direction: row;
